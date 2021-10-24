@@ -1,0 +1,41 @@
+.bg-purple{
+    background-color: #5C0064 !important;
+}
+
+.bold-white-text a{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.bold-purple-text{
+    color: #5C0064 !important;
+    font-weight: bold !important;
+}
+
+.logo{
+    width: 15rem;
+    height: 15rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-light-purple {
+    background-color: #DAA7DB;
+    border: 0;
+    border-radius: 0.75rem !important;
+}
+
+.fractal-img{
+    width: 30rem;
+    height: 20rem;
+    border: white;
+    border-radius: 0.75rem !important;
+}
+
+.mt-6{
+    margin-top: 5rem !important;
+}

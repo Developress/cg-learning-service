@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<main>
+    <div class="container">
+        <img class="center logo mt-4" src={% static '/images/paintbrush.png' %} alt="Paintbrush">
+        <h2 class="text-center mt-4 bold-purple-text">Computer graphics learning service</h2>
+        <div class="col text-center mt-4 bold-white-text">
+            <a href="/fractals" class="btn-light-purple btn btn-primary" role="button">Get started</a>
+        </div>
+    </div>
+</main>
+{% endblock %}
