@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Fractals{% endblock %}
+{% block body %}
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="colSM">
+                    <img id="target-image" class="custom-img mt-6" src={% static 'images/colors.jpeg' %} alt="Image
+                         to change color scheme">
+                </div>
+                <div class="colSM center">
+                    <form id="colors-form" method="post" enctype="multipart/form-data" class="mt-6">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="image" name="image" accept="image/*">
+                            <label class="custom-file-label" id="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <div class="col text-center bold-white-text mt-4">
+                            <button type="submit" class="btn-light-purple btn btn-primary" role="button">Change color scheme
+                            </button>
+                        </div>
+                        <div class="mt-4">
+                            <label for="customRange1">Change brightness of yellow</label>
+                            <input type="range" class="custom-range" id="brightness-range" value="0">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src={% static '/scripts/colors.js' %}></script>
+{% endblock %}
