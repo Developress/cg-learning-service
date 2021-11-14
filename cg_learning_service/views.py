@@ -21,6 +21,10 @@ def colors(request):
     return render(request, 'colors.html')
 
 
+def transform(request):
+    return render(request, 'transform.html')
+
+
 @csrf_exempt
 def create_fractal(request):
     body_unicode = request.body.decode('utf-8')

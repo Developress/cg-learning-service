@@ -25,4 +25,5 @@ urlpatterns = [
     path('colors', views.colors),
     path('change-color-scheme', views.change_color_scheme),
     path('change-brightness', views.change_image_brightness),
+    path('transform', views.transform)
 ]

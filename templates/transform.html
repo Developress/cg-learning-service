@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Transform{% endblock %}
+{% block body %}
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="colSM">
+                    <canvas class="mt-6" id="canvas" width="500px" height="400px" ></canvas>
+                </div>
+                <div class="colSM center">
+                    <div class="mt-6">
+                        <div class="form-row">
+                            <div class="form-group colSM">
+                                <label for="startX">X of start point</label>
+                                <input type="number" class="form-control" id="startX" name="startX"
+                                       min="0" max="50" placeholder="Enter X">
+                            </div>
+                            <div class="ml-5 form-group colSM">
+                                <label for="startY">Y of start point</label>
+                                <input type="number" class="form-control" id="startY" name="startY"
+                                       min="0" max="50" placeholder="Enter Y">
+                            </div>
+                            <div class="ml-5 form-group colSM">
+                                <label for="width">Width</label>
+                                <input type="number" class="form-control" id="width" name="width"
+                                       min="0" max="20" placeholder="Enter width">
+                            </div>
+                        </div>
+                        <div class="col text-center bold-white-text">
+                            <button id="build-triangle-btn" type="button" class="btn-light-purple btn btn-primary" role="button">Build triangle
+                            </button>
+                        </div>
+                        <div class="form-row mt-5">
+                            <div class="form-group colSM">
+                                <label for="N">N</label>
+                                <input type="number" class="form-control" id="N" name="N"
+                                       min="0" max="50" placeholder="Enter N">
+                            </div>
+                            <div class="ml-5 form-group colSM">
+                                <label for="M">M</label>
+                                <input type="number" class="form-control" id="M" name="M"
+                                       min="0" max="50" placeholder="Enter M">
+                            </div>
+                            <div class="ml-5 form-group colSM">
+                                <label for="rotation">Rotation</label>
+                                <input type="number" class="form-control" id="rotation" name="width"
+                                       min="0" max="90" placeholder="Enter rotation">
+                            </div>
+                        </div>
+                        <div class="col text-center bold-white-text">
+                            <button id="transform-btn" type="button" class="btn-light-purple btn btn-primary"
+                                    role="button">Transform
+                            </button>
+                        </div>
+                        <div class="col text-center bold-white-text mt-5">
+                            <button id="to-initial-btn" type="button" class="btn-light-purple btn btn-primary"
+                                    role="button">To initial state
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src={% static '/scripts/transform.js' %}></script>
+{% endblock %}
