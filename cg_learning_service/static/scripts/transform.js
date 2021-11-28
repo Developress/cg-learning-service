@@ -84,6 +84,7 @@ transformButton.onclick = () => {
   performTransform(N, M, angle);
   clearCanvas();
   drawTriangle();
+  window.location.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
 }
 
 function degreesToRadians(degrees)
